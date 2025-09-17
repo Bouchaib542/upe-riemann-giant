@@ -1,0 +1,94 @@
+/* UPE–Riemann (Giant) — Classic minimal styles */
+
+:root {
+  --accent: #1f4e79;
+  --light: #d9e2f3;
+  --ink: #111;
+  --bg: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+header {
+  background: var(--accent);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 { margin: 0; font-size: 1.9rem; }
+
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--light);
+  border-bottom: 1px solid #c2d4ea;
+}
+nav a {
+  color: #0a2540;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+h2 { color: var(--accent); }
+
+.card {
+  border: 1px solid #cfd8e3;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 520px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+}
+
+button, .btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover, .btn:hover { background: #163a5c; }
+
+#output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.5;
+}
+
+.note {
+  color: #444;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+footer {
+  margin-top: 2rem; padding: 1rem; text-align: center;
+  border-top: 1px solid #e5e7eb; color: #555; font-size: 0.9rem;
+}
