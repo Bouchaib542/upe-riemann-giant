@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPE–Riemann (Giant) — 4×10^18 Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="UPE–Riemann Giant: BigInt + Miller–Rabin calculator for Goldbach pairs up to 4×10^18, with an online read-only article.">
+</head>
+<body>
+  <header>
+    <h1>UPE – Riemann (Giant)</h1>
+    <p>Unified Prime Equation: Goldbach pairs up to <strong>4×10^18</strong></p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#calc">Calculator</a>
+    <a href="article.html">Article</a>
+  </nav>
+
+  <main>
+    <section id="overview" class="card">
+      <h2>Overview</h2>
+      <p>
+        This site is a classic, minimal UPE calculator dedicated to <strong>very large even numbers</strong>.
+        It uses <strong>BigInt + Miller–Rabin</strong> to find the minimal symmetric Goldbach pair
+        <code>(p, q) = (E/2 − t, E/2 + t)</code> for even <code>E</code> up to <strong>4×10^18</strong>.
+        The normalized displacement is <code>f(E) = t / (log E)²</code>, and we display the nearest
+        known Riemann zero <code>γ</code> (read-only article linked below).
+      </p>
+      <p><a class="btn" href="article.html">➡ Read the Article (online)</a></p>
+    </section>
+
+    <section id="calc">
+      <h2>Enter an even number E (≤ 4×10^18)</h2>
+      <input type="text" id="evenInput" placeholder="e.g. 1000000000000000000 (1e18)" />
+      <button onclick="computeUPE()">Compute</button>
+
+      <div id="result" class="card">
+        <h2>Result</h2>
+        <div id="output">No computation yet.</div>
+        <div id="note" class="note">
+          Tip: For very large E, t is usually small; BigInt Miller–Rabin keeps it fast.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bouchaïb Bahbouhi — UPE &amp; Riemann (Giant)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
