@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Prime Equation (UPE) — Article (Read-only)</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Read-only article: UPE, Goldbach’s Law at Infinity, and the Zeta Spectrum (summary).">
+</head>
+<body>
+  <header>
+    <h1>Unified Prime Equation (UPE)</h1>
+    <p>Goldbach’s Law at Infinity and the Zeta Spectrum — Read-only</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Abstract</h2>
+      <p>
+        The Unified Prime Equation (UPE) gives a constructive procedure that, for every even E ≥ 4,
+        returns primes (p, q) with p + q = E, and for any N > 3 returns a nearby prime. The normalized
+        displacements f(E) = t/(log E)² exhibit frequencies aligned with the imaginary parts of the
+        nontrivial zeros of ζ(s), suggesting a bridge between Goldbach’s arithmetic symmetry and
+        Riemann’s analytic oscillations.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. UPE Construction</h2>
+      <p>
+        For even E, let x = E/2. There exists a minimal t ≥ 1 such that x − t and x + t are both prime.
+        Then E = (x − t) + (x + t). UPE searches t in the parity-correct order and uses finite sieving
+        plus primality checks to halt with the minimal t*(E). For N > 3, UPE similarly locates a nearest
+        admissible prime with bounded offset.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Demonstrations and Scale</h2>
+      <p>
+        Typical t*(E) is close to (log E)² (heuristic), while unconditional bounds ensure termination.
+        Empirically, even for very large E, the displacement remains tiny relative to E.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Zeta Spectrum Link</h2>
+      <p>
+        The sequence f(E) = t*(E)/(log E)² sampled on a geometric grid in E exhibits oscillations in log E
+        that align with the γ-values of nontrivial zeta zeros. This mirrors the explicit-formula structure
+        for prime correlations and connects UPE’s constructive outputs to ζ(s)’s spectral content.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Conclusion — The UPE–Riemann Theorem (informal)</h2>
+      <p>
+        UPE resolves Goldbach constructively at infinity and encodes the same oscillatory beacons that
+        govern the zeta spectrum—two faces of a unified prime law. (This page is a short read-only summary.)
+      </p>
+    </section>
+
+    <p><a class="btn" href="index.html">← Back to Calculator</a></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Bouchaïb Bahbouhi — UPE &amp; Riemann (Giant)</p>
+  </footer>
+</body>
+</html>
